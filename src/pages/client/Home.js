@@ -1,5 +1,3 @@
-'use strict';
-
 import React, { Component } from 'react';
 import RaisedButton from 'material-ui/lib/raised-button';
 
@@ -25,7 +23,7 @@ export default class Home extends Component {
                             <span>Frontend and UX/UI developer</span>
                         </div>
                         <div className="col-xs-12 cv-profile-text fadeIn a2 animated">
-                            <p>I am a Frontend developer with big experience of UX/UI management. I have a love of clean, modern frameworks, and I have lots of experience with different frameworks and architectures. I am a highly motivated, self-driven developer. Mainly I have focused on client side on Javascript, HTML/CSS. I always strive to extend my skills in programming and hone existing ones by self-study.</p>
+                            <p>I am a Frontend developer with big experience of UX/UI management. I have a love of clean, modern frameworks, and I have lots of experience with different frameworks and architectures. I am a highly motivated, self-driven developer. Mainly I have focused on client side on Javascript, AngularJS, ReactJS. I always strive to extend my skills in programming and hone existing ones by self-study.</p>
                             <a href={cv}><RaisedButton backgroundColor="#2196f3" label="Download CV" secondary={true}></RaisedButton></a>
                             <a href="#/contact"><RaisedButton backgroundColor="#1EBF6E" label="Contact Me" secondary={true}></RaisedButton></a>
                         </div>

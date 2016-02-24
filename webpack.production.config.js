@@ -1,6 +1,6 @@
 var path = require('path');
 var webpack = require('webpack');
-var CompressionPlugin = require("compression-webpack-plugin");
+var CompressionPlugin = require('compression-webpack-plugin');
 var node_modules_dir = path.resolve(__dirname, 'node_modules');
 
 var config = {
@@ -11,18 +11,18 @@ var config = {
     },
     plugins: [
         new webpack.ProvidePlugin({
-            $: "jquery",
-            jQuery: "jquery"
+            $: 'jquery',
+            jQuery: 'jquery'
         }),
         new CompressionPlugin({
-            asset: "{file}.gz",
-            algorithm: "gzip",
+            asset: '{file}.gz',
+            algorithm: 'gzip',
             regExp: /\.js$|\.html$/,
             threshold: 10240,
             minRatio: 0.8
         }),
         new webpack.DefinePlugin({
-            'process.env.NODE_ENV': '"development"'
+            'process.env.NODE_ENV': '"production"'
         })
     ],
     module: {
@@ -34,7 +34,7 @@ var config = {
             },
             {
                 test: /\.css$/,
-                loader: "style-loader!css-loader"
+                loader: 'style-loader!css-loader'
             },
             {
                 test: /\.less$/,

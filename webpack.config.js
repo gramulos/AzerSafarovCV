@@ -14,8 +14,8 @@ module.exports = {
     plugins: [
         new webpack.HotModuleReplacementPlugin(),
         new webpack.ProvidePlugin({
-            $: "jquery",
-            jQuery: "jquery"
+            $: 'jquery',
+            jQuery: 'jquery'
         })
     ],
     module: {
@@ -27,7 +27,7 @@ module.exports = {
             },
             {
                 test: /\.css$/,
-                loader: "style-loader!css-loader"
+                loader: 'style-loader!css-loader'
             },
             {
                 test: /\.less$/,
